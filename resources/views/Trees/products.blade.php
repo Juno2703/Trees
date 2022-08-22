@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>cla</title>
+      <title>Tree Shop</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -46,7 +46,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" style="width: 50px ; height: 50px ;" alt="#" /></a>
+                              <a href="{{url('/')}}"><img src="images/logo.png" style="width: 50px ; height: 50px ;" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -58,19 +58,21 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
+                              
                               <li class="nav-item ">
                                  <a class="nav-link" href="{{url('/')}}">Home</a>
                               </li>
+                              
+
+                              @if (Session::has('loginID'))
                               <li class="nav-item">
                                  <a class="nav-link" href="{{url('products')}}">Product</a>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                               </li>
-
-                              @if (Session::has('loginID'))
                               <li class="nav-item d_none">
-                                 <a class="nav-link" href="#">Welcome: {{Session::get('loginID')}}</a>
+                                 <a class="nav-link" href="{{'information/'.Session::get('loginID')}}">Welcome: {{Session::get('loginID')}}</a>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="{{url('/logout')}}">Logout</a>
@@ -137,7 +139,6 @@
             <div class="container">
                <div class="row">
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <img class="logo1" src="images/logo1.png" alt="#"/>
                      <ul class="social_icon">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -148,13 +149,13 @@
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                      <h3>About Us</h3>
                      <ul class="about_us">
-                        <li>dolor sit amet, consectetur<br> magna aliqua. Ut enim ad <br>minim veniam, <br> quisdotempor incididunt r</li>
+                        <li></li>
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                      <h3>Contact Us</h3>
                      <ul class="conta">
-                        <li>dolor sit amet,<br> consectetur <br>magna aliqua.<br> quisdotempor <br>incididunt ut e </li>
+                        <li> </li>
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">

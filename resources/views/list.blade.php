@@ -14,7 +14,18 @@
     <div class="container" style="margin-top: 20px;">
         <div class="row">
             <div class="col-md-12">
-                <h2><a href="{{url('list')}}" class="btn btn-success">List Product</a>|<a href="{{url('list_category')}}" class="btn btn-success">Category</a>|<a href="{{url('list_origin')}}" class="btn btn-success">Origin</a>|<a href="{{url('list_details')}}" class="btn btn-success">Product Details</a></h2>
+            @if (Session::has('loginID_admin'))
+                            
+                <h2>
+                <a href="{{url('list')}}" class="btn btn-success">List Product</a>|
+                <a href="{{url('list_category')}}" class="btn btn-success">Category</a>|
+                <a href="{{url('list_origin')}}" class="btn btn-success">Origin</a>|
+                <a href="{{url('list_details')}}" class="btn btn-success">Product Details</a>
+                <a href="{{url('list_customer')}}" class="btn btn-success">Customer </a>
+                <a href="" class="btn btn-danger">Welcome: {{Session::get('loginID_admin')}}</a>
+                <a href="{{url('/logout_list')}}" class="btn btn-danger">Logout</a>
+                </h2>
+                
                 @if (Session::has('success'))
                 <div class="alert alert-danger" role="alert">
                     {{Session::get('success')}}
@@ -62,6 +73,9 @@
                         @endforeach        
                     </tbody>
                 </table>
+                @else
+                <a href="{{url('login_admin')}}" class="btn btn-success">Login</a>
+                @endif
             </div>
         </div>
     </div>

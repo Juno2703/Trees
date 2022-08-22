@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Tree Shop </title>
+  <title>CodePen - Css / html Login form </title>
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'>
 <link rel="stylesheet" href="css/login_style.css">
@@ -13,7 +13,7 @@
 <div class="container">
 	<div class="screen">
 		<div class="screen__content">
-			<form class="login" action="{{route('login-process')}}" method="POST">
+			<form class="login" action="{{route('login-process_admin')}}" method="POST">
                         @if (Session::get('fail'))
                             <div class="arlert arlert-danger">
                                 {{Session::get('fail')}}
@@ -22,11 +22,11 @@
                         @csrf
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input type="text" name="username" class="login__input" placeholder="User name / Email">
+					<input type="text" name="username_admin" class="login__input" placeholder="User name / Email">
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
-					<input type="password" name="password" class="login__input" placeholder="Password">
+					<input type="password" name="password_admin" class="login__input" placeholder="Password">
 				</div>
 				<button class="button login__submit">
 					<span class="button__text">Log In Now</span>

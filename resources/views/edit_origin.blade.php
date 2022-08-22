@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2> Edit Origin </h2>
+                <h2> Update Origin </h2>
 
                 @if (Session::has('success'))
                     <div class="alert alert-success" role="alert">

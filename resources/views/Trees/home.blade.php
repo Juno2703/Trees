@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>cla</title>
+      <title>Tree Shop</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -71,7 +71,7 @@
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                               </li>
                               <li class="nav-item d_none">
-                                 <a class="nav-link" href="#">Welcome: {{Session::get('loginID')}}</a>
+                                 <a class="nav-link" href="{{'information/'.Session::get('loginID')}}">Welcome: {{Session::get('loginID')}}</a>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="{{url('/logout')}}">Logout</a>
@@ -102,26 +102,33 @@
       <!-- three_box -->
       <div class="three_box">
          <div class="container">
+         <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Home</h2>
+                  </div>
+               </div>
+            </div>
             <div class="row">
                <div class="col-md-4">
                   <div class="box_text">
-                     <i><img src="images/thr.png" alt="#"/></i>
-                     <h3>Computer</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                     <i><img src="images/logo01.jpg" style="height: 200px ;" alt="#"/></i>
+                     <h3>Small Tree</h3>
+                     <p> fdsfldsafhskdlfbslkdfbsldf </p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="box_text">
-                     <i><img src="images/thr1.png" alt="#"/></i>
-                     <h3>Laptop</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                     <i><img src="images/logo01.jpg" style="height: 200px ;" alt="#"/></i>
+                     <h3>Medium Tree</h3>
+                     <p> fdsafsdfdas </p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="box_text">
-                     <i><img src="images/thr2.png" alt="#"/></i>
-                     <h3>Tablet</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                  <i><img src="images/logo01.jpg" style="height: 200px ;" alt="#"/></i>
+                     <h3>Big Tree</h3>
+                     <p> </p>
                   </div>
                </div>
             </div>
@@ -129,39 +136,7 @@
       </div>
       <!-- three_box -->
       <!-- products -->
-      <div  class="products">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Our Products</h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="our_products">
-                     <div class="row">
-                        
-                     @foreach( $data as $row )
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="image/product/{{$row->ProductImage}}" alt="#" style="height: 160px ; width: 160px ;"/ ></figure>
-                              <h3>{{$row -> ProductName}}</h3>
-                           </div>
-                        </div>
-                        @endforeach
-                        
-                        
-                        <div class="col-md-12">
-                           <a class="read_more" href="#">See More</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+      
       <!-- end products -->
       
       <!-- customer -->
@@ -171,7 +146,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <img class="logo1" src="images/logo1.png" alt="#"/>
+                     
                      <ul class="social_icon">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -182,13 +157,13 @@
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                      <h3>About Us</h3>
                      <ul class="about_us">
-                        <li>dolor sit amet, consectetur<br> magna aliqua. Ut enim ad <br>minim veniam, <br> quisdotempor incididunt r</li>
+                        <li></li>
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                      <h3>Contact Us</h3>
                      <ul class="conta">
-                        <li>dolor sit amet,<br> consectetur <br>magna aliqua.<br> quisdotempor <br>incididunt ut e </li>
+                        <li></li>
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">

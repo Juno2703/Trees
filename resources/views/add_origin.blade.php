@@ -34,6 +34,11 @@
                         <input type="text" name="name_origin" class="form-control"
                             placeholder="Enter product name">
                     </div>
+                    <div class="md-3">
+                        <label for="name_origin" class="form-label"> Detail </label>
+                        <input type="text" name="detail_origin" class="form-control"
+                            placeholder="Enter product detail">
+                    </div>
 
                     <button type="submit" class="btn btn-primary"> Submit </button>
                     <a href="{{url('list_origin')}}" class="btn btn-danger"> Back </a>

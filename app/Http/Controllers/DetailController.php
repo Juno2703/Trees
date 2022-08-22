@@ -59,7 +59,7 @@ class DetailController extends Controller
             'DetailImage1'=>$request->image1_details,
             'DetailImage2'=>$request->image2_details,
             'DetailImage3'=>$request->image3_details,
-            'ProductID'=>$request->id
+            'ProductID'=>$request->productid
 
         ]);
         return redirect()->back()->with('success', 'Detail Updated Successfully!');

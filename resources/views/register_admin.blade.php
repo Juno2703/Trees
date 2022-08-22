@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>	
 <head>
-<title>Tree Shop</title>
+<title>Levy Flat Registration Form Flat Responsive Widget Template  : w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <meta name="keywords" content="Cofrestru Registration Form Responsive Templates, Iphone Widget Template, Smartphone login forms,Login form, Widget Template, Responsive Templates, a Ipad 404 Templates, Flat Responsive Templates" />
@@ -18,10 +18,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--//webfonts-->
 </head>
 <body>
-	<h1>Register Tree Shop</h1>
+	<h1>Levy Flat Registration Form</h1>
 		<div class="registration">
-			<h2>Registration</h2>				
-					<form action="{{route('register-process')}}" method="POST">
+			<h2>Registration Form</h2>				
+					<form action="{{route('register-process_admin')}}" method="POST">
                         @if (Session::has('success'))
                             <div class="arlert arlert-success">
                                 {{Session::get('success')}}
@@ -34,17 +34,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         @endif
                         @csrf
 						<div class="form-info">
-                        <input type="text" class="text" value=" Enter Your User Name" name="username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Name';}" >
-						<input type="password" value="Password" name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
-						<input type="text" class="text" name="fullname" value="Enter Your Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Full Name';}" >
-						<input type="text" class="text" name="address" value=" Enter your Adress" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Address';}" >
-                        <input type="text" class="text" name="email" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Adress';}" >
-                        <input type="text" class="text" name="phone" value="Enter Your Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" >
+                        <input type="text" class="text" value="User Name" name="username_admin" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Name';}" >
+						<input type="password" value="Password" name="password_admin" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+						<input type="text" class="text" name="fullname_admin" value="Your Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Full Name';}" >
+						<input type="text" class="text" name="address_admin" value=" Adress" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Address';}" >
+                        <input type="text" class="text" name="email_admin" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Adress';}" >
+                        <input type="text" class="text" name="phone_admin" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" >
                         </div>
 					    <input type="submit" value="REGISTER">
 					</form>
 					<ul class="bottom-icons">
-						<li><a href="{{url('login')}}">Signup With</a></li>
+						<li><a href="#">Signup With</a></li>
 						<li><a href="#" class="facebook"> </a></li>
 						<li><a href="#" class="twitter"> </a></li>
 						<li><a href="#" class="gp"> </a></li>

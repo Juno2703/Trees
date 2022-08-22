@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2> Add a new product </h2>
+                <h2> Add a new Category </h2>
 
                 @if (Session::has('success'))
                     <div class="alert alert-success" role="alert">
@@ -33,6 +33,12 @@
                         <label for="name_category" class="form-label"> Name </label>
                         <input type="text" name="name_category" class="form-control"
                             placeholder="Enter product name">
+                    </div>
+
+                    <div class="md-3">
+                        <label for="name_category" class="form-label"> Note Category </label>
+                        <input type="text" name="note_category" class="form-control"
+                            placeholder="Enter product Note">
                     </div>
 
                     <button type="submit" class="btn btn-primary"> Submit </button>

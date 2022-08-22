@@ -37,10 +37,7 @@ class ProductController2 extends Controller
         ->join('details', 'details.ProductID', '=', 'products.ProductID')
         ->Where('products.ProductID', '=', $id)         
         ->first(); // or first()
-        $usa = Detail::select('details.*', 'products.ProductName')
-        ->join('products', 'products.ProductID', '=', 'details.ProductID')
-       
-        ->first(); // or first()  
+
         return view('Trees.details', compact('data'));
     }
 
