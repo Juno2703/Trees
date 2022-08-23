@@ -54,11 +54,11 @@
                                 <td>{{$row->DetailID}}</td>
                                 <td>{{$row->DetailAge}}</td>
                                 <td>{{$row->DetailSize}}</td>
-                                <td><img src="image/{{$row->DetailImage1}}" 
+                                <td><img src="image/product/{{$row->DetailImage1}}" 
                                          alt="" height="90px" width="90px"></td>
-                                <td><img src="image/{{$row->DetailImage2}}" 
+                                <td><img src="image/product/{{$row->DetailImage2}}" 
                                          alt="" height="90px" width="90px"></td>
-                                <td><img src="image/{{$row->DetailImage3}}" 
+                                <td><img src="image/product/{{$row->DetailImage3}}" 
                                          alt="" height="90px" width="90px"></td>
                                          @foreach ($product as $row1 )
                                          @if ($row1->ProductID===$row->ProductID)

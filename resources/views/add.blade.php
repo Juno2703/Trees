@@ -44,7 +44,7 @@
                         <input type="file" name="image" class="form-control">
                     </div>
                     <div class="md-3">
-                        <label for="categoryid" class="form-label"> CategoryID </label>
+                        <label for="categoryid" class="form-label"> Category Name </label>
                         <select name="categoryid">
                             <option></option>
                             @foreach ($categories as $row)
@@ -53,7 +53,7 @@
                         </select>
                     </div>
                     <div class="md-3">
-                        <label for="originid" class="form-label"> OriginID </label>
+                        <label for="originid" class="form-label"> Origin Name </label>
                         <select name="originid">
                             <option></option>
                             @foreach ($origin as $row)

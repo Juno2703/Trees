@@ -116,7 +116,7 @@
                 <h1>{{$data-> ProductName}}</h1>
                 <span>Origin : {{$data-> OriginName}}</span>
                 <span>Category : {{$data-> CategoryName}}</span>
-                <p>Size : {{$data-> DetailSize}} Cm | Age : {{$data-> DetailAge}} Month</p>
+                <p>Size : {{$data-> DetailSize}} Feel | Age : {{$data-> DetailAge}} Month</p>
                 <a href="#" style="">{{$data-> ProductPrice}}$ </a> <a href="">Buy Now</a>
             </div>
         </div>

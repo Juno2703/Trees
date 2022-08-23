@@ -45,34 +45,26 @@
                     </div>
                     <div class="md-3">
                         <label for="categoryid" class="form-label"> CategoryID </label>
-                        <select name="categoryid">
+                        <select name="categoryid" class="form-control">
                             @foreach ($categories as $row)
-                                @if ($data->CategoryID===$row->CategoryID)
-                                    <option value="{{$row->CategoryID}}" >{{$row->CategoryName}}</option>
-                                    break;
-                                @endif
-                            @endforeach
-                            @foreach ($categories as $row)
-                                @if ($data->CategoryID!==$row->CategoryID)
-                                    <option value="{{$row->CategoryID}}" >{{$row->CategoryName}}</option>
-                                @endif
+                               <option value="{{ $row ->CategoryID}}" 
+                               {{ $row ->CategoryID ==  $data ->CategoryID ? 'selected' : ''}} >
+                                    {{$row ->CategoryName}}
+                               </option>
+
                             @endforeach
                         </select>
                     </div>
                     <div class="md-3">
                         <label for="originid" class="form-label"> OriginID </label>
-                        <select name="originid">
+                        <select name="originid" class ='form-control'>
                             @foreach ($origin as $row)
-                                @if ($data->OriginID===$row->OriginID)
-                                    <option value="{{$row->OriginID}}" >{{$row->OriginName}}</option>
-                                    break;
-                                @endif
+                                    <option value="{{$row->OriginID}}"  
+                                    {{ $row ->OriginID ==  $data ->OriginID ? 'selected' : ''}} >
+                                        {{$row->OriginName}}
+                                    </option>                                
                             @endforeach
-                            @foreach ($origin as $row)
-                                @if ($data->OriginID!==$row->OriginID)
-                                    <option value="{{$row->OriginID}}" >{{$row->OriginName}}</option>
-                                @endif
-                            @endforeach
+                            
                         </select>
                     </div>
 

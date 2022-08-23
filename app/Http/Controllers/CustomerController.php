@@ -24,8 +24,9 @@ class CustomerController extends Controller
             if(Hash::check($request -> password, $ua -> CustomerPass)){
                 $request ->session() ->put('loginID', $ua->CustomerID);
 
+                    $cate = Category::get();
                     $data = Product::get();
-                    return view ('Trees.home', compact ('data'));
+                    return view ('Trees.home', compact ('data','cate'));
                 
                 
             }else{

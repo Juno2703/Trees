@@ -14,7 +14,8 @@ class ProductController2 extends Controller
     public function index()
     {
        $data = Product::get();
-        return view('Trees.home',compact('data'));
+       $cate = Category::get();
+        return view('Trees.home',compact('data','cate'));
     }
 
     public function getProducts()

@@ -53,7 +53,7 @@
                                 <td>{{$row->ProductID}}</td>
                                 <td>{{$row->ProductName}}</td>
                                 <td>{{$row->ProductPrice}}</td>
-                                <td><img src="image/{{$row->ProductImage}}" alt="" height="90px" width="90px"></td>
+                                <td><img src="image/product/{{$row->ProductImage}}" alt="" height="90px" width="90px"></td>
                                          @foreach ($category as $row1 )
                                              @if ($row1->CategoryID===$row->CategoryID)
                                              <td>{{$row1->CategoryName}}</td>

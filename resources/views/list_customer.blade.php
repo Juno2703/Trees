@@ -31,10 +31,7 @@
                     {{Session::get('success')}}
                 </div>    
                 @endif
-                <div style="margin-right:10%; float:right;">
-                    <a href="{{url('add')}}" class="btn btn-success">Add new</a>
-
-                </div>
+                
                 <table class="table table-hover">
                     <thead>
                         <tr>

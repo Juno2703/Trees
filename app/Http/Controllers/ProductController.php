@@ -33,7 +33,7 @@ class ProductController extends Controller
         $product->ProductName = $request->name;
         $product->ProductPrice = $request->price;
         $product->ProductImage = $request->image->getClientOriginalName();
-        $request->file('image')->move(public_path('image'),$request->image->getClientOriginalName());
+        $request->file('image')->move(public_path('image/product'),$request->image->getClientOriginalName());
         $product->CategoryID = $request->categoryid;
         $product->OriginID = $request->originid;
         $product->save();

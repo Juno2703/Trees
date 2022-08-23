@@ -110,27 +110,15 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-md-4">
-                  <div class="box_text">
-                     <i><img src="images/logo01.jpg" style="height: 200px ;" alt="#"/></i>
-                     <h3>Small Tree</h3>
-                     <p> fdsfldsafhskdlfbslkdfbsldf </p>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="box_text">
-                     <i><img src="images/logo01.jpg" style="height: 200px ;" alt="#"/></i>
-                     <h3>Medium Tree</h3>
-                     <p> fdsafsdfdas </p>
-                  </div>
-               </div>
+               @foreach ($cate as $row)
                <div class="col-md-4">
                   <div class="box_text">
                   <i><img src="images/logo01.jpg" style="height: 200px ;" alt="#"/></i>
-                     <h3>Big Tree</h3>
-                     <p> </p>
+                     <h3>{{$row ->CategoryName}}</h3>
+                     <p> {{$row ->CategoryNote  }}</p>
                   </div>
                </div>
+               @endforeach
             </div>
          </div>
       </div>
